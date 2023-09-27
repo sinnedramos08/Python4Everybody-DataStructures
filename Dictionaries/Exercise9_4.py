@@ -17,6 +17,7 @@ histogram={}
 for lines in fh:
     lines=lines.rstrip()
     if "From" in lines:
+        print(lines)
         words=lines.split(" ")
         if len(words)==8:
             words_email=words[1]
